@@ -23,7 +23,7 @@ values ('klc', '$2a$10$vUQrTY7IN0lGJdlv/E.6n.I09krJTYX3tQsRiSZ4S6PDCQws9Kq5m', '
 
 insert into useraccount_tb(user_id, score, has_price, account) values (1, 0, 0,'등록계좌없음');
 insert into useraccount_tb(user_id, score, has_price, account) values (2, 0, 15000,'등록계좌없음');
-insert into useraccount_tb(user_id, score, has_price, account) values (3, 0, 300000,'등록계좌없음');
+insert into useraccount_tb(user_id, score, has_price, account) values (3, 0, 500000,'등록계좌없음');
 insert into useraccount_tb(user_id, score, has_price, account) values (4, 0, 15000,'등록계좌없음');
 insert into useraccount_tb(user_id, score, has_price, account) values (5, 0, 15000,'등록계좌없음');
 
@@ -52,7 +52,7 @@ insert into goods_tb(title, category_id, seller_id, content, img_url, starting_p
 values ('강아지 산책줄 나눔합니다.', '4', '4', '강아지 산책줄 나눔 중입니다.', '/upload/dog_line.png.', 1000, '2024-12-10 12:20:00','2024-12-13 16:15:00', 1);
 
 insert into goods_tb(title, category_id, seller_id, content, img_url, starting_price, created_at, end_at, status)
-values ('아이패드 9세대 판매합니다.', '1', '2', '거의 새 제품 같은 아이패드 9세대입니다. 액정 보호필름 부착, 케이스 포함.', '/upload/ipad9.png', 250000, '2024-12-12 10:00:00', '2024-12-18 19:21:00', 0);
+values ('아이패드 9세대 판매합니다.', '1', '2', '거의 새 제품 같은 아이패드 9세대입니다. 액정 보호필름 부착, 케이스 포함.', '/upload/ipad9.png', 100000, '2024-12-12 10:00:00', '2024-12-22 18:49:00', 0);
 
 insert into goods_tb(title, category_id, seller_id, content, img_url, starting_price, created_at, end_at, status)
 values ('삼성 스마트 TV 55인치 중고', '2', '2', '화질 좋고 잘 작동하는 삼성 스마트 TV 55인치입니다.', '/upload/tv_samsung.png', 150000, '2024-12-01 15:00:00', '2024-12-08 20:00:00', 1);
@@ -111,17 +111,14 @@ insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (1,2,280000,no
 insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (5,2,300000,now());
 insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (4,2,340000,now());
 insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (8,7,55000,now());
-insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (10,7,50000,now());
-insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (10,8,60000,now());
+-- insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (10,7,50000,now());
+-- insert into bid_tb(buyer_id,goods_id,try_price,created_at) values (10,8,60000,now());
 
 
 
 
 -- transaction_tb 더미데이터
-insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at, delivery_num) values (1, 10, 4, 0, 1, 0,86000, now(), '461274841');
-insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at, delivery_num) values (6, 10, 1, 1, 1, 0,100000, now(), '456748412');
-insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at) values (3, 4, 10, 0, 0, 0,500000, now());
-insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at) values (4, 2, 10, 0, 1, 0,200000, now());
+insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at, delivery_num) values (3, 4, 10, 0, 1, 0,500000, now(), '112323221');
 insert into transaction_tb(goods_id, buyer_id, seller_id, buyer_status, seller_status, transaction_status, success_price, updated_at, delivery_num) values (5, 4, 10, 1, 1, 0,150000, now(), '134578254');
 
 
