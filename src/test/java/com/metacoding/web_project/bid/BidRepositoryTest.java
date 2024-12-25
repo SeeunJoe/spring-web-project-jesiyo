@@ -1,5 +1,6 @@
 package com.metacoding.web_project.bid;
 
+import com.metacoding.web_project._core.util.PageUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -57,7 +58,7 @@ public class BidRepositoryTest {
         Integer id = 1;
 
         // when (테스트할 메서드 실행)
-        List<Bid> bidList = bidRepository.findByBuyerIdForBuy(id, PageUtil.offsetCount(page, 5), 5);
+        List<Bid> bidList = bidRepository.findByBuyerIdForBuy(id, PageUtil.offsetCount("1", 5), 5);
 
         // then(eye) (결과 검증 / 출력으로 직접 확인은 eye)
         for (Bid bid : bidList) {

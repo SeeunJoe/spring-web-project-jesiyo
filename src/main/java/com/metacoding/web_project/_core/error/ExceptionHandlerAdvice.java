@@ -1,15 +1,10 @@
 package com.metacoding.web_project._core.error;
 
-import com.metacoding.web_project._core.CommonResp;
 import com.metacoding.web_project._core.error.ex.*;
-import com.metacoding.web_project.report.ReportRequest;
-import com.metacoding.web_project.user.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @ControllerAdvice
